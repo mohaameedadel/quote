@@ -69,12 +69,14 @@ body {
   -o-transform: translateY(-50%);
 }
 
-.btn-outline-primary {
-  border-color: var(--main-color);
+.btn {
+
   color: var(--main-color);
+  border-color: var(--main-color);
+
 }
 
-.btn-outline-primary:hover {
+.btn:hover {
   background-color: var(--main-color);
-  border-color: var(--main-color);
+  color: #fff;
 }
