@@ -1,0 +1,79 @@
+:root {
+  --main-color: #22a8a8;
+}
+
+body {
+  background-color: var(--main-color);
+  background-image: linear-gradient(#0000005b 0% 100%);
+}
+.quote {
+  position: relative;
+}
+
+.quote::after {
+  content: url(../images/quote-right.svg);
+  position: absolute;
+  bottom: 0;
+  left: 2.8125rem;
+  width: 6.25rem;
+  opacity: 0.1;
+}
+.head {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.head::before {
+  content: "”";
+  position: absolute;
+  top: -1.25rem;
+  left: -1.875rem;
+  color: var(--main-color);
+  font-size: 3.125rem;
+}
+
+.head::after {
+  content: "“";
+  position: absolute;
+  bottom: -2.5rem;
+  right: -1.875rem;
+  color: var(--main-color);
+  font-size: 3.125rem;
+}
+
+#quote,
+#authorName {
+  position: relative;
+  width: fit-content;
+}
+
+#quote::before,
+#authorName::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.3125rem;
+  transform: translateY(-50%);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.btn-outline-primary{
+  border-color:var(--main-color) ;
+  color: var(--main-color);
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--main-color) ;
+}
